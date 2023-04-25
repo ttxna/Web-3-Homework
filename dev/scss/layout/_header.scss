@@ -2,11 +2,5 @@
     Header
 ============= */
 header{
-    display: grid;
-    grid-template-columns: 16px 16px;
-    grid-template-columns: ". header .";
-
-   >div{
-    grid-area: header;
-   }
+ 
 }

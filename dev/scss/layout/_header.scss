@@ -6,7 +6,7 @@ header{
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
 
-    >div{ 
+    >div{
         grid-area: header;
     }
 }

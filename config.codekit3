@@ -89,6 +89,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/new1.jpg" : {
       "ft" : 16384,
       "iS" : 37820,
@@ -153,6 +163,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/assets\/search.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/search.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -313,11 +333,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/search\/search-icon.svg" : {
+    "\/deploy\/img\/search\/search.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/search\/search-icon.svg",
+      "oAP" : "\/deploy\/img\/search\/search.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -382,20 +402,20 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/gallery.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/gallery.html",
+      "oF" : 0
+    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/hero2.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/hero2.html",
       "oF" : 0
     },
     "\/dev\/content\/new.kit" : {
@@ -697,25 +717,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/README.html",
-      "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
     }
   },
   "hooks" : [

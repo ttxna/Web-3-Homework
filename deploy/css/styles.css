@@ -357,6 +357,15 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 16px 16px;
+  grid-template-columns: ". header .";
+}
+header > div {
+  grid-area: header;
+}
+
 /* =============
     Footer
 ============= */
@@ -364,6 +373,9 @@ textarea {
     Heroes
 ============= */
 /* ------ Hero 2 ------*/
+/* =============
+    New
+============= */
 /* =============
     Search
 ============= */

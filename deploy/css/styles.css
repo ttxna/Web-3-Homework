@@ -387,6 +387,21 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  footer ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "p1 s2 s3 s4";
+  }
+}
+footer ul li {
+  list-style: none;
+}
 footer > div {
   grid-area: footer;
 }
@@ -399,11 +414,28 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
+#hero ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #hero ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#hero ul li {
+  list-style: none;
+  background-color: gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
 #hero > div {
   grid-area: hero;
 }
 
-/* ------ Hero 2 ------*/
 /* =============
     New
 ============= */
@@ -415,6 +447,61 @@ footer > div {
 #new > div {
   grid-area: new;
 }
+#new > div ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #new > div ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "p1 p1 p2 p2" "p3 p3 p4 p4" ". p5 p5 .";
+  }
+}
+@media (min-width: 1200px) {
+  #new > div ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "p1 p1 p2 p2 p3 p3" ". p4 p4 p5 p5 .";
+  }
+}
+#new > div ul li {
+  list-style: none;
+  background-color: darkcyan;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+@media (min-width: 1200px) {
+  #new > div ul #p1 {
+    grid-area: p1;
+  }
+}
+@media (min-width: 1200px) {
+  #new > div ul #p2 {
+    grid-area: p2;
+  }
+}
+@media (min-width: 1200px) {
+  #new > div ul #p3 {
+    grid-area: p3;
+  }
+}
+@media (min-width: 1200px) {
+  #new > div ul #p4 {
+    grid-area: p4;
+  }
+}
+@media (min-width: 1200px) {
+  #new > div ul #p5 {
+    grid-area: p5;
+  }
+}
+@media (min-width: 1200px) {
+  #new > div ul #p6 {
+    grid-area: p6;
+  }
+}
 
 /* =============
     Request
@@ -423,6 +510,11 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". request .";
+}
+@media (min-width: 768px) {
+  #request {
+    grid-template-columns: 20% auto 20%;
+  }
 }
 #request > div {
   grid-area: request;
@@ -433,7 +525,7 @@ footer > div {
 ============= */
 #search {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 130px auto;
   grid-template-areas: ". search .";
 }
 #search > div {

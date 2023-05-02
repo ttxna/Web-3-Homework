@@ -8,5 +8,65 @@
 
     >div{
         grid-area: new;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 16px;
+
+            @include md{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "p1 p1 p2 p2"
+                "p3 p3 p4 p4"
+                ". p5 p5 .";
+
+            }
+            @include xl {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "p1 p1 p2 p2 p3 p3"
+                ". p4 p4 p5 p5 .";
+            }
+            li{
+                list-style: none;
+                background-color: darkcyan;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: left;
+
+            }
+            #p1 {
+                @include xl{
+                    grid-area: p1;
+            }
+        }
+            #p2 {
+                @include xl{
+                    grid-area: p2;
+            }
+            }
+            #p3 {
+                @include xl{
+                    grid-area: p3;
+            }
+            }
+            #p4 {
+                @include xl{
+                    grid-area: p4;
+            }
+            }
+            #p5 {
+                @include xl{
+                    grid-area: p5;
+            }
+            }
+            #p6 {
+                @include xl{
+                    grid-area: p6;
+            }
+            }
+        }
     }
 }

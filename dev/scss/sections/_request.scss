@@ -6,6 +6,9 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". request .";
 
+    @include md{ 
+        grid-template-columns: 20% auto 20%;
+    }
     >div{
         grid-area: request;
     }

@@ -5,14 +5,27 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero .";
+    
+    ul{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 16px;
 
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+            // grid-template-columns: 50% 50%;
+            // grid-template-columns: 50% auto;
+        }
+        li{
+            list-style: none;
+            background-color: gray;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+    }
     >div{
         grid-area: hero;
     }
-}
-
-/* ------ Hero 2 ------*/
-
-#hero-2{
-
 }

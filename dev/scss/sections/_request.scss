@@ -7,8 +7,12 @@
     grid-template-areas: ". request .";
 
     @include md{ 
+        grid-template-columns: 12% auto 12%;
+    }
+    @include xl{ 
         grid-template-columns: 20% auto 20%;
     }
+
     >div{
         grid-area: request;
     }

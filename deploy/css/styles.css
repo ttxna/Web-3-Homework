@@ -544,6 +544,11 @@ footer ul #s4 > div {
 }
 @media (min-width: 768px) {
   #request {
+    grid-template-columns: 12% auto 12%;
+  }
+}
+@media (min-width: 1200px) {
+  #request {
     grid-template-columns: 20% auto 20%;
   }
 }

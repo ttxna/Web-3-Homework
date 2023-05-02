@@ -14,13 +14,33 @@ footer{
         @include md{
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
-            "p1 s2 s3 s4";
+            "s1 s2 s3 s4";
         }
         li{
             list-style: none;
     }
+    #s1 {
+        @include xl{
+            grid-area: s1;
+    }
+}
+    #s2 {
+        @include xl{
+            grid-area: s2;
+    }
+    }
+    #s3 {
+        @include xl{
+            grid-area: s3;
+    }
+    }
+    #s4 {
+        @include xl{
+            grid-area: s4;
 }
     >div{
         grid-area: footer;
+    }
+}
     }
 }

@@ -12,10 +12,11 @@
         display: grid;
         gap: 16px;
 
+      
         @include md{
             grid-template-columns: repeat(2, 1fr);
-            // grid-template-columns: 50% 50%;
-            // grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "h1 h2";
         }
         li{
             list-style: none;
@@ -24,8 +25,18 @@
             padding-bottom: 20px;
             text-align: left;
         }
+        #h1 {
+            @include xl{
+                grid-area: h1;
+        }
+    }
+        #h2 {
+            @include xl{
+                grid-area: h2;
+        }
     }
     >div{
         grid-area: hero;
     }
+}
 }

@@ -30,6 +30,14 @@
                 background-color: gray;
             }
         }
+        @include xl{
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap:16px;
+            section{
+                background-color: gray;
+            }
+        }
     }
 }
 

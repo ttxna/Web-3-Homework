@@ -382,12 +382,6 @@ header > div {
 /* =============
     Footer
 ============= */
-footer {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
-}
-
 /* =============
     Heroes
 ============= */
@@ -412,6 +406,16 @@ footer {
   }
 }
 @media (min-width: 768px) {
+  #hero #hero-bottom {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+  #hero #hero-bottom section {
+    background-color: gray;
+  }
+}
+@media (min-width: 1200px) {
   #hero #hero-bottom {
     display: grid;
     grid-template-columns: 50% auto;
@@ -500,13 +504,13 @@ footer {
 @media (min-width: 768px) {
   #search {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 30% auto;
   }
 }
 @media (min-width: 1200px) {
   #search {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 40% auto;
   }
 }
 #search > div {

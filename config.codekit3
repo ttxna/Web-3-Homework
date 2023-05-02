@@ -406,7 +406,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/gallery.html",
       "oF" : 0
     },
@@ -424,14 +424,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/new.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/request.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/request.html",
       "oF" : 0
     },
     "\/dev\/content\/search.kit" : {
@@ -668,21 +660,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_new.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_request.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_request.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

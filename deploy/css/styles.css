@@ -387,84 +387,39 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
-footer ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 16px;
-}
-@media (min-width: 768px) {
-  footer ul {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "s1 s2 s3 s4";
-  }
-}
-footer ul li {
-  list-style: none;
-}
-@media (min-width: 1200px) {
-  footer ul #s1 {
-    grid-area: s1;
-  }
-}
-@media (min-width: 1200px) {
-  footer ul #s2 {
-    grid-area: s2;
-  }
-}
-@media (min-width: 1200px) {
-  footer ul #s3 {
-    grid-area: s3;
-  }
-}
-@media (min-width: 1200px) {
-  footer ul #s4 {
-    grid-area: s4;
-  }
-}
-footer ul #s4 > div {
-  grid-area: footer;
-}
 
 /* =============
     Heroes
 ============= */
-#hero {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
+@media (min-width: 768px) {
+  #hero #hero-top {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 16px;
+  }
+  #hero #hero-top aside {
+    background-color: gray;
+  }
 }
-#hero ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 16px;
+@media (min-width: 1200px) {
+  #hero #hero-top {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+  #hero #hero-top aside {
+    background-color: gray;
+  }
 }
 @media (min-width: 768px) {
-  #hero ul {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "h1 h2";
+  #hero #hero-bottom {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
   }
-}
-#hero ul li {
-  list-style: none;
-  background-color: gray;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-}
-@media (min-width: 1200px) {
-  #hero ul #h1 {
-    grid-area: h1;
+  #hero #hero-bottom section {
+    background-color: gray;
   }
-}
-@media (min-width: 1200px) {
-  #hero ul #h2 {
-    grid-area: h2;
-  }
-}
-#hero ul > div {
-  grid-area: hero;
 }
 
 /* =============
@@ -535,34 +490,24 @@ footer ul #s4 > div {
 }
 
 /* =============
-    Request
-============= */
-#request {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". request .";
-}
-@media (min-width: 768px) {
-  #request {
-    grid-template-columns: 12% auto 12%;
-  }
-}
-@media (min-width: 1200px) {
-  #request {
-    grid-template-columns: 20% auto 20%;
-  }
-}
-#request > div {
-  grid-area: request;
-}
-
-/* =============
     Search
 ============= */
 #search {
   display: grid;
-  grid-template-columns: 130px auto;
+  grid-template-columns: 20% auto;
   grid-template-areas: ". search .";
+}
+@media (min-width: 768px) {
+  #search {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #search {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
 #search > div {
   grid-area: search;

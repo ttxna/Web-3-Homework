@@ -5,42 +5,6 @@ footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-    ul{
-        margin: 0;
-        padding: 0;
-        display: grid;
-        gap: 16px;
-
-        @include md{
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: 
-            "s1 s2 s3 s4";
-        }
-        li{
-            list-style: none;
+    
     }
-    #s1 {
-        @include xl{
-            grid-area: s1;
-    }
-}
-    #s2 {
-        @include xl{
-            grid-area: s2;
-    }
-    }
-    #s3 {
-        @include xl{
-            grid-area: s3;
-    }
-    }
-    #s4 {
-        @include xl{
-            grid-area: s4;
-}
-    >div{
-        grid-area: footer;
-    }
-}
-    }
-}
+  

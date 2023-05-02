@@ -3,8 +3,17 @@
 ============= */
 #search{
     display: grid;
-    grid-template-columns: 130px auto;
+    grid-template-columns: 20% auto;
     grid-template-areas: ". search .";
+
+    @include md{
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+    @include xl{
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
 
     >div{
         grid-area: search;

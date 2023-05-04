@@ -17,3 +17,11 @@
     width: 100%;
 }
 
+.show-large {
+    display: none;
+
+    @include lg{
+        display: block;
+    }
+}
+

@@ -340,6 +340,15 @@ template {
   width: 100%;
 }
 
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */

@@ -5,41 +5,56 @@
     #hero-top{
         @include md{
             display: grid;
-            grid-template-columns: 30% auto;
-            gap:16px;
-            aside{
-                background-color: gray;
+            grid-template-columns: 40% auto;
             }
+            #hero-left{
+                background-color: rgb(48, 48, 48);
+            }
+            #hero-right{
+                background-color: gray;
         }
-        @include xl{
+        @include lg{
             display: grid;
             grid-template-columns: 50% auto;
-            gap:16px;
-            aside{
+
+            #hero-left{
+                background-color: rgb(48, 48, 48);
+            }
+            #hero-right{
                 background-color: gray;
             }
-    }
     }
 
     #hero-bottom{
         @include md{
             display: grid;
-            grid-template-columns: 50% auto;
-            gap:16px;
-            section{
-                background-color: gray;
-            }
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero-bottom .";
         }
-        @include xl{
+        >div{
+            @include md{
+                grid-area: hero-bottom;
+                display: grid;
+                grid-template-columns: 50% auto;
+            }
+        
+        >div{
+            grid-area: hero-bottom;
             display: grid;
             grid-template-columns: 50% auto;
-            gap:16px;
-            section{
-                background-color: gray;
+        }
+        #member{
+            background-color: red;
+        }
+        
+    
+        #download{
+            background-color: blue;
+        }
+        }
             }
         }
     }
-}
 
 
 

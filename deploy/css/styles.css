@@ -388,42 +388,51 @@ header > div {
 @media (min-width: 768px) {
   #hero #hero-top {
     display: grid;
-    grid-template-columns: 30% auto;
-    gap: 16px;
-  }
-  #hero #hero-top aside {
-    background-color: gray;
+    grid-template-columns: 40% auto;
   }
 }
-@media (min-width: 1200px) {
+#hero #hero-top #hero-left {
+  background-color: rgb(48, 48, 48);
+}
+#hero #hero-top #hero-right {
+  background-color: gray;
+}
+@media (min-width: 1024px) {
   #hero #hero-top {
     display: grid;
     grid-template-columns: 50% auto;
-    gap: 16px;
   }
-  #hero #hero-top aside {
+  #hero #hero-top #hero-left {
+    background-color: rgb(48, 48, 48);
+  }
+  #hero #hero-top #hero-right {
     background-color: gray;
   }
 }
 @media (min-width: 768px) {
-  #hero #hero-bottom {
+  #hero #hero-top #hero-bottom {
     display: grid;
-    grid-template-columns: 50% auto;
-    gap: 16px;
-  }
-  #hero #hero-bottom section {
-    background-color: gray;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero-bottom .";
   }
 }
-@media (min-width: 1200px) {
-  #hero #hero-bottom {
+@media (min-width: 768px) {
+  #hero #hero-top #hero-bottom > div {
+    grid-area: hero-bottom;
     display: grid;
     grid-template-columns: 50% auto;
-    gap: 16px;
   }
-  #hero #hero-bottom section {
-    background-color: gray;
-  }
+}
+#hero #hero-top #hero-bottom > div > div {
+  grid-area: hero-bottom;
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+#hero #hero-top #hero-bottom > div #member {
+  background-color: red;
+}
+#hero #hero-top #hero-bottom > div #download {
+  background-color: blue;
 }
 
 /* =============
@@ -449,7 +458,7 @@ header > div {
     grid-template-areas: "p1 p1 p2 p2" "p3 p3 p4 p4" ". p5 p5 .";
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #new > div ul {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "p1 p1 p2 p2 p3 p3" ". p4 p4 p5 p5 .";
@@ -462,32 +471,32 @@ header > div {
   padding-bottom: 20px;
   text-align: left;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #new > div ul #p1 {
     grid-area: p1;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #new > div ul #p2 {
     grid-area: p2;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #new > div ul #p3 {
     grid-area: p3;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #new > div ul #p4 {
     grid-area: p4;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #new > div ul #p5 {
     grid-area: p5;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #new > div ul #p6 {
     grid-area: p6;
   }

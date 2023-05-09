@@ -3,6 +3,18 @@
 ============= */
 #hero {
     #hero-top {
+        aside{
+            padding-left: 16px;
+            padding-top: 16px;
+            
+                display: flex;
+                justify-content: "flex-end";
+               
+            
+        }
+
+            
+        
         @include md {
             display: grid;
             grid-template-columns: 40% auto;
@@ -40,11 +52,19 @@
     }
 
         #hero-bottom {
+           aside{
+display: flex;
+justify-content: flex-end;
+           }
 
+        
+           
             @include md {
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". hero-bottom .";
+                padding-left: 16px;
+                padding-top: 16px;
             }
 
             @include lg {
@@ -56,14 +76,16 @@
                     grid-area: hero-bottom;
                     display: grid;
                     grid-template-columns: 50% auto;
+                    
                 }
 
                 #member{
                     background-color: pink;
-    
+                    border: 3px solid var(--black);
                 }
                 #download{
-                    background-color: green;
+                    background-color: lightseagreen;
+                    border: 3px solid var(--black);
                 }
             }
         }

@@ -18,11 +18,21 @@ footer{
             grid-template-areas: 
             "f1 f2"
             "f1 f3";
+            #newletter{
+                display: flex;
+                justify-content: flex-end;
         }
         @include lg{
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: 
             "f1 f2 f3";
+        
+    
+            #f3{
+                display: flex;
+                justify-content: flex-end;
+            }
+        
         }
         #f1{
             @include md{
@@ -51,12 +61,30 @@ footer{
         aside{
             ul{
                 li{
-                    color: var(--white)
+                    color: white
                 }
             }
         }
+        h1{
+            margin-bottom: 16px;
+            @include lg{
+                margin-bottom: 24px;
+            }
+        }
+        form{
+            margin-top: 32px;
+            margin-bottom: 32px;
+            @include md{
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+            @include lg{
+                margin-top: 32px;
+                margin-bottom: 32px;
     }
 }
 
-
+}
+}
+}
   

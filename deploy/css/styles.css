@@ -13,6 +13,8 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --light-grey:#454545;
+  --grid-margin-mobile: 16px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -327,6 +329,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .header-footer-grid {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -345,15 +355,6 @@ template {
 }
 @media (min-width: 1024px) {
   .show-large {
-    display: block;
-  }
-}
-
-.show-extra-large {
-  display: none;
-}
-@media (min-width: 1400px) {
-  .show-extra-large {
     display: block;
   }
 }
@@ -404,7 +405,7 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-color: gray;
+  background-color: black;
   color: white;
 }
 footer > div {
@@ -438,6 +439,16 @@ footer > div {
     grid-area: f3;
   }
 }
+footer > div form button {
+  background-color: var(--light-grey);
+  color: white;
+}
+footer > div div {
+  color: white;
+}
+footer > div aside ul li {
+  color: var(--white);
+}
 
 /* =============
     Heroes
@@ -453,7 +464,8 @@ footer > div {
 }
 @media (min-width: 1200px) {
   #hero #hero-top #hero-left {
-    grid-template-columns: 20% auto 16px;
+    grid-template-columns: 30% auto 16px;
+    background-color: var(--olive);
   }
 }
 #hero #hero-top #hero-right {
@@ -462,6 +474,7 @@ footer > div {
 @media (min-width: 1200px) {
   #hero #hero-top #hero-right {
     grid-template-columns: 16px auto 20%;
+    background-color: var(--yellow);
   }
 }
 @media (min-width: 1024px) {
@@ -477,34 +490,29 @@ footer > div {
   }
 }
 @media (min-width: 768px) {
-  #hero #hero-top #hero-bottom {
+  #hero #hero-bottom {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero-bottom .";
   }
 }
 @media (min-width: 1024px) {
-  #hero #hero-top #hero-bottom {
+  #hero #hero-bottom {
     grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {
-  #hero #hero-top #hero-bottom > div {
+  #hero #hero-bottom > div {
     grid-area: hero-bottom;
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
-#hero #hero-top #hero-bottom > div > div {
-  grid-area: hero-bottom;
-  display: grid;
-  grid-template-columns: 50% auto;
+#hero #hero-bottom > div #member {
+  background-color: pink;
 }
-#hero #hero-top #hero-bottom > div #member {
-  background-color: red;
-}
-#hero #hero-top #hero-bottom > div #download {
-  background-color: blue;
+#hero #hero-bottom > div #download {
+  background-color: green;
 }
 
 /* =============
@@ -603,11 +611,6 @@ footer > div {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
-  }
-}
-@media (min-width: 1400px) {
-  #gallery {
-    grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {

@@ -2,6 +2,15 @@
     Base
 ============= */
 
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+
+
 .header-footer-grid{
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -21,13 +30,6 @@
     display: none;
 
     @include lg{
-        display: block;
-    }
-}
-.show-extra-large {
-    display: none;
-
-    @include xxl{
         display: block;
     }
 }

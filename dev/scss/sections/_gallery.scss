@@ -5,9 +5,6 @@
         grid-template-areas: ". gallery .";
     }
 
-    @include xxl{
-        grid-template-columns: auto 1200px auto;
-    }
     ul{
         
         @include md{

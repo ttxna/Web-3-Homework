@@ -1,69 +1,74 @@
 /* =============
     Heroes
 ============= */
-#hero{
-    #hero-top{
-        @include md{
+#hero {
+    #hero-top {
+        @include md {
             display: grid;
             grid-template-columns: 40% auto;
-            }
-            #hero-left{
-                background-color: rgb(48, 48, 48);
-                @include xl{
-                    grid-template-columns: 20% auto 16px;
-                }
-            }
-            #hero-right{
-                background-color: gray;
-                @include xl{
-                    grid-template-columns: 16px auto 20%;
-                }
         }
-        @include lg{
+
+        #hero-left {
+            background-color: rgb(48, 48, 48);
+            @include xl {
+                grid-template-columns: 30% auto 16px;
+                background-color: var(--olive);
+            }
+        }
+
+        #hero-right {
+            background-color: gray;
+
+            @include xl {
+                grid-template-columns: 16px auto 20%;
+                background-color: var(--yellow);
+            }
+        }
+
+        @include lg {
             display: grid;
             grid-template-columns: 50% auto;
 
-            #hero-left{
+            #hero-left {
                 background-color: rgb(48, 48, 48);
             }
-            #hero-right{
+
+            #hero-right {
                 background-color: gray;
             }
+        }
     }
 
-    #hero-bottom{
-        @include md{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". hero-bottom .";
-        }
-        @include lg{
-            grid-template-columns: auto 1200px auto;
-        }
-        >div{
-            @include md{
-                grid-area: hero-bottom;
+        #hero-bottom {
+
+            @include md {
                 display: grid;
-                grid-template-columns: 50% auto;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". hero-bottom .";
             }
-        
-        >div{
-            grid-area: hero-bottom;
-            display: grid;
-            grid-template-columns: 50% auto;
-        }
-        #member{
-            background-color: red;
-        }
-        
+
+            @include lg {
+                grid-template-columns: auto 1200px auto;
+            }
+
+            >div {
+                @include md {
+                    grid-area: hero-bottom;
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                }
+
+                #member{
+                    background-color: pink;
     
-        #download{
-            background-color: blue;
-        }
-        }
+                }
+                #download{
+                    background-color: green;
+                }
             }
         }
-    }
+    
+}
 
 
 
@@ -72,14 +77,14 @@
 //     display: grid;
 //     grid-template-columns: 16px auto 16px;
 //     grid-template-areas: ". hero .";
-    
+
 //     ul{
 //         margin: 0;
 //         padding: 0;
 //         display: grid;
 //         gap: 16px;
 
-      
+
 //         @include md{
 //             grid-template-columns: repeat(2, 1fr);
 //             grid-template-areas: 

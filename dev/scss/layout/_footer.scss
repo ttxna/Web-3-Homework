@@ -5,8 +5,9 @@ footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-    background-color: gray;
+    background-color: black;
     color: white;
+
 
     >div{
         grid-area: footer;
@@ -38,7 +39,22 @@ footer{
                 grid-area: f3;
             }
         }
-        
+        form{
+            button{
+                background-color: var(--light-grey);
+                color: white;
+            }
+        }
+        div{
+            color: white;
+        }
+        aside{
+            ul{
+                li{
+                    color: var(--white)
+                }
+            }
+        }
     }
 }
 

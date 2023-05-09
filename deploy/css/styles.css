@@ -14,6 +14,8 @@ html {
   --black: #000000;
   --white: #ffffff;
   --light-grey:#454545;
+  --olive: #E2BA06;
+  --yellow: #FFD205;
   --grid-margin-mobile: 16px;
 }
 
@@ -337,6 +339,10 @@ ul li {
   list-style: none;
 }
 
+body {
+  background-color: black;
+}
+
 .content-spacing {
   padding-top: 32px;
 }
@@ -458,7 +464,7 @@ footer > div {
 }
 @media (min-width: 768px) {
   footer > div form button {
-    background-color: var(--light-grey);
+    background-color: var(--mid-grey);
     color: white;
   }
   footer > div div {
@@ -503,6 +509,7 @@ footer > div {
   padding-top: 16px;
   display: flex;
   justify-content: "flex-end";
+  color: white;
 }
 @media (min-width: 768px) {
   #hero #hero-top {
@@ -511,21 +518,19 @@ footer > div {
   }
 }
 #hero #hero-top #hero-left {
-  background-color: rgb(48, 48, 48);
+  background-color: var(--dark-grey);
 }
 @media (min-width: 1200px) {
   #hero #hero-top #hero-left {
     grid-template-columns: 30% auto 16px;
-    background-color: var(--olive);
   }
 }
 #hero #hero-top #hero-right {
-  background-color: gray;
+  background-color: var(--light-grey);
 }
 @media (min-width: 1200px) {
   #hero #hero-top #hero-right {
     grid-template-columns: 16px auto 20%;
-    background-color: var(--yellow);
   }
 }
 @media (min-width: 1024px) {
@@ -534,10 +539,10 @@ footer > div {
     grid-template-columns: 50% auto;
   }
   #hero #hero-top #hero-left {
-    background-color: rgb(48, 48, 48);
+    background-color: var(--dark-grey);
   }
   #hero #hero-top #hero-right {
-    background-color: gray;
+    background-color: var(--light-grey);
   }
 }
 #hero #hero-bottom aside {
@@ -661,6 +666,15 @@ footer > div {
 #search {
   display: flex;
   justify-content: center;
+}
+#search form {
+  display: flex;
+}
+#search form input {
+  width: 100%;
+}
+#search form button {
+  font-size: 1.875rem;
 }
 
 @media (min-width: 1024px) {

@@ -4,4 +4,15 @@
 #search{
     display: flex;
     justify-content: center;
+
+    form{
+        display: flex;
+        input{
+            width: 100%;
+        }
+        button{
+            font-size: rem-calc(30);
+        }
+    
+}
 }

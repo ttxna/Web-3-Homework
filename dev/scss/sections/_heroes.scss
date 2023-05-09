@@ -3,17 +3,15 @@
 ============= */
 #hero {
     #hero-top {
+        
         aside{
             padding-left: 16px;
             padding-top: 16px;
             
                 display: flex;
                 justify-content: "flex-end";
-               
-            
+            color: white;
         }
-
-            
         
         @include md {
             display: grid;
@@ -21,19 +19,19 @@
         }
 
         #hero-left {
-            background-color: rgb(48, 48, 48);
+            background-color: var(--dark-grey);
             @include xl {
                 grid-template-columns: 30% auto 16px;
-                background-color: var(--olive);
+               
             }
         }
 
         #hero-right {
-            background-color: gray;
+            background-color: var(--light-grey);
 
             @include xl {
                 grid-template-columns: 16px auto 20%;
-                background-color: var(--yellow);
+              
             }
         }
 
@@ -42,11 +40,11 @@
             grid-template-columns: 50% auto;
 
             #hero-left {
-                background-color: rgb(48, 48, 48);
+                background-color: var(--dark-grey);
             }
 
             #hero-right {
-                background-color: gray;
+                background-color: var(--light-grey);
             }
         }
     }

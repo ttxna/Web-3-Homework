@@ -9,9 +9,15 @@
             }
             #hero-left{
                 background-color: rgb(48, 48, 48);
+                @include xl{
+                    grid-template-columns: 20% auto 16px;
+                }
             }
             #hero-right{
                 background-color: gray;
+                @include xl{
+                    grid-template-columns: 16px auto 20%;
+                }
         }
         @include lg{
             display: grid;
@@ -30,6 +36,9 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-bottom .";
+        }
+        @include lg{
+            grid-template-columns: auto 1200px auto;
         }
         >div{
             @include md{

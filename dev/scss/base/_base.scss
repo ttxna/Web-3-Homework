@@ -24,4 +24,11 @@
         display: block;
     }
 }
+.show-extra-large {
+    display: none;
+
+    @include xxl{
+        display: block;
+    }
+}
 

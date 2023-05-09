@@ -349,6 +349,15 @@ template {
   }
 }
 
+.show-extra-large {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .show-extra-large {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -391,6 +400,45 @@ header > div {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+  background-color: gray;
+  color: white;
+}
+footer > div {
+  grid-area: footer;
+}
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f3 {
+    grid-area: f3;
+  }
+}
+
 /* =============
     Heroes
 ============= */
@@ -403,8 +451,18 @@ header > div {
 #hero #hero-top #hero-left {
   background-color: rgb(48, 48, 48);
 }
+@media (min-width: 1200px) {
+  #hero #hero-top #hero-left {
+    grid-template-columns: 20% auto 16px;
+  }
+}
 #hero #hero-top #hero-right {
   background-color: gray;
+}
+@media (min-width: 1200px) {
+  #hero #hero-top #hero-right {
+    grid-template-columns: 16px auto 20%;
+  }
 }
 @media (min-width: 1024px) {
   #hero #hero-top {
@@ -423,6 +481,11 @@ header > div {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero-bottom .";
+  }
+}
+@media (min-width: 1024px) {
+  #hero #hero-top #hero-bottom {
+    grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {
@@ -533,4 +596,29 @@ header > div {
 }
 #search > div {
   grid-area: search;
+}
+
+@media (min-width: 1024px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+  }
+}
+@media (min-width: 1400px) {
+  #gallery {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 768px) {
+  #gallery ul {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery ul {
+    grid-template-columns: 60% auto;
+  }
 }

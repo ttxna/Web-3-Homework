@@ -11,7 +11,19 @@ footer{
 
     >div{
         grid-area: footer;
-
+        ul{
+            li{
+                a{
+                    line-height: 140%;
+                }
+            }
+        }
+        aside{
+            h1{
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+        }
         @include md{
             display: grid;
             grid-template-columns: 50% auto;

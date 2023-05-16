@@ -375,6 +375,10 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
@@ -428,6 +432,13 @@ footer {
 }
 footer > div {
   grid-area: footer;
+}
+footer > div ul li a {
+  line-height: 140%;
+}
+footer > div aside h1 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -507,12 +518,41 @@ footer > div {
 /* =============
     Heroes
 ============= */
+#hero #hero-top img {
+  line-height: 0;
+  display: block;
+}
 #hero #hero-top aside {
   padding-left: 16px;
   padding-top: 16px;
   display: flex;
   justify-content: "flex-end";
   color: white;
+}
+#hero #hero-top aside h1 {
+  font-size: 1.125rem;
+  padding-right: 16px;
+}
+@media (min-width: 1024px) {
+  #hero #hero-top aside h1 {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-top aside h1 {
+    font-size: 1.5625rem;
+  }
+}
+#hero #hero-top aside p {
+  font-size: 1.125rem;
+  padding-right: 16px;
+}
+#hero #hero-top aside h3 {
+  font-size: 1.125rem;
+  padding-right: 16px;
+}
+#hero #hero-top aside h3 p {
+  line-height: 120%;
 }
 @media (min-width: 768px) {
   #hero #hero-top {
@@ -548,6 +588,11 @@ footer > div {
     background-color: var(--light-grey);
   }
 }
+#hero #hero-bottom h1 {
+  font-weight: 400;
+  padding: 20px;
+  font-size: 1.375rem;
+}
 #hero #hero-bottom aside {
   display: flex;
   justify-content: flex-end;
@@ -570,10 +615,16 @@ footer > div {
     padding-left: 16px;
     padding-top: 16px;
   }
+  #hero #hero-bottom h1 {
+    font-size: 29px;
+  }
 }
 @media (min-width: 1024px) {
   #hero #hero-bottom {
     grid-template-columns: auto 1200px auto;
+  }
+  #hero #hero-bottom h1 {
+    font-size: 31px;
   }
 }
 @media (min-width: 768px) {
@@ -607,15 +658,33 @@ footer > div {
   margin-bottom: 16px;
 }
 #new > div h3 {
+  margin-top: 10px;
   margin-bottom: 16px;
+  margin-left: 16px;
+  font-size: 1.6875rem;
+}
+@media (min-width: 768px) {
+  #new > div h3 {
+    margin-top: 18px;
+  }
 }
 @media (min-width: 1024px) {
   #new > div h3 {
+    margin-top: 18px;
     margin-bottom: 32px;
   }
 }
+@media (min-width: 1200px) {
+  #new > div h3 {
+    margin-top: 18px;
+  }
+}
 #new > div p {
-  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
 }
 #new > div ul {
   margin: 0;

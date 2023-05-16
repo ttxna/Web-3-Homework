@@ -3,7 +3,11 @@
 ============= */
 #hero {
     #hero-top {
-        
+        img{
+            line-height: 0;
+            display: block;
+        }
+
         aside{
             padding-left: 16px;
             padding-top: 16px;
@@ -11,6 +15,29 @@
                 display: flex;
                 justify-content: "flex-end";
             color: white;
+            h1{
+                font-size: rem-calc(18);
+                padding-right: 16px;
+                @include lg{
+                    font-size: rem-calc(25);
+                }
+                @include xl{
+                    font-size: rem-calc(25);
+                }
+            }
+            p{
+                font-size: rem-calc(18);
+                padding-right: 16px;
+            }
+            h3{
+                font-size: rem-calc(18);
+                padding-right: 16px;
+                p{
+                    line-height: 120%;
+                    
+                }
+                
+            }
         }
         
         @include md {
@@ -50,6 +77,11 @@
     }
 
 #hero-bottom {
+    h1{
+        font-weight: 400;
+        padding: 20px;
+        font-size: rem-calc(22);
+    }
     aside{
         
 display: flex;
@@ -80,10 +112,16 @@ justify-content: flex-end;
                 grid-template-areas: ". hero-bottom .";
                 padding-left: 16px;
                 padding-top: 16px;
+                h1{
+                    font-size: 29px;
+                }
             }
 
             @include lg {
                 grid-template-columns: auto 1200px auto;
+                h1{
+                    font-size: 31px;
+                }
             }
 
             >div {

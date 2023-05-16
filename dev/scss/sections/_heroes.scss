@@ -49,12 +49,29 @@
         }
     }
 
-        #hero-bottom {
-           aside{
+#hero-bottom {
+    aside{
+        
 display: flex;
 justify-content: flex-end;
            }
+           div{
+            section{
+                a:link, a:visited{
+                    padding: 10px 12px;
+                    color: var(--white);
+                    background-color: var(--dark-grey);
+                    transition: 0.25s;
+    
+                    &:hover, &:active{
+                        color: var(--dark-grey);
+                        background-color: var(--white);
 
+                    }
+                }
+            }
+           
+            }
         
            
             @include md {

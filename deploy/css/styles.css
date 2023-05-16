@@ -14,8 +14,7 @@ html {
   --black: #000000;
   --white: #ffffff;
   --light-grey:#454545;
-  --olive: #E2BA06;
-  --yellow: #FFD205;
+  --dark-grey: #282828;
   --grid-margin-mobile: 16px;
 }
 
@@ -339,6 +338,10 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: black;
 }
@@ -549,6 +552,16 @@ footer > div {
   display: flex;
   justify-content: flex-end;
 }
+#hero #hero-bottom div section a:link, #hero #hero-bottom div section a:visited {
+  padding: 10px 12px;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  transition: 0.25s;
+}
+#hero #hero-bottom div section a:link:hover, #hero #hero-bottom div section a:link:active, #hero #hero-bottom div section a:visited:hover, #hero #hero-bottom div section a:visited:active {
+  color: var(--dark-grey);
+  background-color: var(--white);
+}
 @media (min-width: 768px) {
   #hero #hero-bottom {
     display: grid;
@@ -628,6 +641,16 @@ footer > div {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
+}
+#new > div ul li a:link, #new > div ul li a:visited {
+  padding: 10px 12px;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  transition: 0.25s;
+}
+#new > div ul li a:link:hover, #new > div ul li a:link:active, #new > div ul li a:visited:hover, #new > div ul li a:visited:active {
+  color: var(--dark-grey);
+  background-color: var(--white);
 }
 @media (min-width: 1024px) {
   #new > div ul #p1 {

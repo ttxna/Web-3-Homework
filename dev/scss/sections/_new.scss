@@ -47,8 +47,20 @@
                 padding-top: 20px;
                 padding-bottom: 20px;
                 text-align: left;
+            
+                a:link, a:visited{
+                    padding: 10px 12px;
+                    color: var(--white);
+                    background-color: var(--dark-grey);
+                    transition: 0.25s;
+    
+                    &:hover, &:active{
+                        color: var(--dark-grey);
+                        background-color: var(--white);
 
             }
+        }
+    }
             #p1 {
                 @include lg{
                     grid-area: p1;

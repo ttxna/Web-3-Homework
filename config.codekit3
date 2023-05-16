@@ -221,7 +221,7 @@
     },
     "\/deploy\/img\/heroes\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 916715,
+      "iS" : 247473,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero.jpg",
@@ -234,7 +234,7 @@
     },
     "\/deploy\/img\/heroes\/hero2-left.jpg" : {
       "ft" : 16384,
-      "iS" : 286189,
+      "iS" : 59951,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero2-left.jpg",
@@ -247,7 +247,7 @@
     },
     "\/deploy\/img\/heroes\/hero2-right.jpg" : {
       "ft" : 16384,
-      "iS" : 284388,
+      "iS" : 35682,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero2-right.jpg",
@@ -260,10 +260,23 @@
     },
     "\/deploy\/img\/heroes\/hero3.jpg" : {
       "ft" : 16384,
-      "iS" : 262812,
+      "iS" : 45018,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/heroes\/icon1.jpg" : {
+      "ft" : 16384,
+      "iS" : 5298,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/heroes\/icon1.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -296,7 +309,7 @@
     },
     "\/deploy\/img\/new\/new1.jpg" : {
       "ft" : 16384,
-      "iS" : 37820,
+      "iS" : 5440,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/new1.jpg",
@@ -309,7 +322,7 @@
     },
     "\/deploy\/img\/new\/new2.jpg" : {
       "ft" : 16384,
-      "iS" : 48868,
+      "iS" : 5089,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/new2.jpg",
@@ -322,7 +335,7 @@
     },
     "\/deploy\/img\/new\/new3.jpg" : {
       "ft" : 16384,
-      "iS" : 29498,
+      "iS" : 3412,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/new3.jpg",
@@ -335,7 +348,7 @@
     },
     "\/deploy\/img\/new\/new4.jpg" : {
       "ft" : 16384,
-      "iS" : 50185,
+      "iS" : 6706,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/new4.jpg",
@@ -348,7 +361,7 @@
     },
     "\/deploy\/img\/new\/new5.jpg" : {
       "ft" : 16384,
-      "iS" : 50369,
+      "iS" : 6445,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/new5.jpg",

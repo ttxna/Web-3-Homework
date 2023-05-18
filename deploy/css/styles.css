@@ -706,13 +706,15 @@ footer > div aside h1 {
 }
 #new > div ul li {
   list-style: none;
-  background-color: darkcyan;
+  background-color: var(--white);
+  border-radius: 2px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
 }
 #new > div ul li a:link, #new > div ul li a:visited {
   padding: 10px 12px;
+  margin-left: 16px;
   color: var(--white);
   background-color: var(--dark-grey);
   transition: 0.25s;

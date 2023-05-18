@@ -38,6 +38,10 @@ footer{
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: 
             "f1 f2 f3";
+            #socials{
+                display: flex;
+                justify-content: flex-end;
+        }
         
     
             #f3{

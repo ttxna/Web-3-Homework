@@ -91,6 +91,7 @@ justify-content: flex-end;
             section{
                 a:link, a:visited{
                     padding: 10px 12px;
+                    margin-left: 22px;
                     color: var(--white);
                     background-color: var(--dark-grey);
                     transition: 0.25s;
@@ -101,6 +102,11 @@ justify-content: flex-end;
 
                     }
                 }
+                aside{
+                        display: flex;
+                        justify-content: first baseline;
+
+                }
             }
            
             }
@@ -110,7 +116,7 @@ justify-content: flex-end;
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". hero-bottom .";
-                padding-left: 16px;
+                padding-left: 32px;
                 padding-top: 16px;
                 h1{
                     font-size: 29px;
@@ -119,6 +125,7 @@ justify-content: flex-end;
 
             @include lg {
                 grid-template-columns: auto 1200px auto;
+                padding-left: 32px;
                 h1{
                     font-size: 31px;
                 }
@@ -135,10 +142,12 @@ justify-content: flex-end;
                 #member{
                     background-color: pink;
                     border: 3px solid var(--black);
+                    margin-bottom: 16px;
                 }
                 #download{
                     background-color: lightseagreen;
                     border: 3px solid var(--black);
+                    margin-bottom: 16px;
                 }
             }
         }
